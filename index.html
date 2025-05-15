@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Gourmet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <style>
-        header{
-            background-color: red;
+        body{
+            font-family: 'Merriweather', serif;
         }
+        header {
+            background-color: #910000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-family: Hoftype;
+        }
+        hr{
+            height: 4px;
+            background-color: #910000; 
+            border: none;        
+        }
+        main h1{
+            color: #910000;
+        }
+        .price{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        }
+        div:not(.price){
+            margin-bottom: 50px;
+        }
+
     </style>
 </head>
 <body>
@@ -15,33 +40,52 @@
         <h1>Restaurant Le Gourmet</h1>
         <p>Menu du jour</p>
     </header>
+
+
+
+
+    <main>
     <div>
         <h1>Entrées</h1>
         <hr>
         <h2>Salade de chévre chaud</h2>
-        <p>Servie sur pain grillé avec mielet noix</p>
-        <h2>Soupe à l'oignon</h2>
-        <p>Traditionnelle, gratinée au fromage</p>
+        <div class = "price">8€</div>
+        <i>Servie sur pain grillé avec mielet noix</i>
+        <h2>Soupe à l'oignon</h2> <span class="price"><b>8€</b></span>
+        <div class = "price">8€</div>
+        <i>Traditionnelle, gratinée au fromage</i>
     </div>
     
-    <div>
-        <h1>Plats Principaux
-</h1>
-        <hr>
-        <h2>Magret de canard                    18€</h2>
-        <p>Servie sur pain grillé avec mielet noix</p>
-        <h2>Soupe à l'oignon</h2>
-        <p>Traditionnelle, gratinée au fromage</p>
-    </div>
 
     <div>
-        <h1>Entrées</h1>
+        <h1>Plats Principaux</h1>
         <hr>
-        <h2>Salade de chévre chaud</h2>
-        <p>Servie sur pain grillé avec mielet noix</p>
-        <h2>Soupe à l'oignon</h2>
-        <p>Traditionnelle, gratinée au fromage</p>
+        <h2>Magret de canard</h2>
+        <div class = "price">18€</div>
+        <i>Avec sauce au miel et purée maison</i>
+        <h2>Risotto aux champignons</h2>
+        <div class = "price">16€</div>
+        <i>Crémeux et parfumé aux herbes fraîches</i>
     </div>
+
+
+
+
+
+    <div>
+        <h1>Desserts</h1>
+        <hr>
+        <h2>Tarte Tatin</h2>
+        <div class = "price">6€</div>
+        <i>Pommes caramélisées et boule de vanille</i>
+        <h2>Mousse au chocolat</h2>
+        <div class = "price">5€</div>
+        <i>100% chocolat noir maison</i>
+    </div>
+
+
+
+</main>
 
     <footer><p>© 2025 Le Gourmet - Tous droits réservés</p></footer>
 
